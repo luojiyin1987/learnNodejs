@@ -21,5 +21,6 @@ promise
         return Promise.reject('err')
     })
     .catch(e => {
+        console.log('p3 caugt err');
         console.log(e);
     });

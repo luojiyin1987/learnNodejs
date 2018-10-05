@@ -1,21 +1,25 @@
-const p = new Promise((resolve, reject)=> {
-    resolve(true)
-})
+const promise = new Promise((resolve, reject) => {
+    resolve('1');
+});
 
-p.then(r => {
-    console.log(r);
-    return new Promise((resolve, reject) => {
-        resolve('2');
-    });
-})
+promise
     .then(r => {
         console.log(r);
+        return new Promise((resolve, reject) => {
+            reject('err');
+        });
+    })
+    .then(r => {
+        console.log(r);
+        return new Promise((rsv, rej) => {
+            console.log('p2 execed');
+            rej('rejected');
+        });
+    }, (err) => {
+        console.log('p2 caught err');
+        console.log(err);
+        return Promise.reject('err')
+    })
+    .catch(e => {
+        console.log(e);
     });
-
-const p1 = Promise.resolve(true)
-
-const p2 = Promise.resolve(false)
-
-console.log(p);
-console.log(p1);
-console.log(p2);

@@ -1,0 +1,22 @@
+{
+  "name": "learnnodejs",
+  "version": "1.0.0",
+  "description": "这是一个业余练习项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luojiyin1987/learnNodejs.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "luojiyin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luojiyin1987/learnNodejs/issues"
+  },
+  "homepage": "https://github.com/luojiyin1987/learnNodejs#readme"
+}

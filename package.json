@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/luojiyin1987/learnNodejs/issues"
   },
-  "homepage": "https://github.com/luojiyin1987/learnNodejs#readme"
+  "homepage": "https://github.com/luojiyin1987/learnNodejs#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.10.1",
+    "vue": "^2.5.17"
+  }
 }

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/luojiyin1987/learnNodejs#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {

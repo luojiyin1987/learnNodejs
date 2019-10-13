@@ -24,7 +24,15 @@
        console.log($( ".URL-input" ).val());
        const downloadURL = $( ".URL-input" ).val();
 
+       postJson("/download", {downloadURL: downloadURL}, function (rtn)
+       {
+           console.log(rtn);
+           alert(JSON.stringify(rtn));
+       });
+
    }
+
+
 
    function postJson(url,data,cb)
    {

@@ -4,6 +4,8 @@ const app  = express();
 
 app.use('/wiki', wiki);
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) =>
 {
    res.send('Hello World');
@@ -14,6 +16,7 @@ app.get('/', (req, res) =>
 
    console.log("second");
 });
+
 
 app.listen(3000, ()=>
 {

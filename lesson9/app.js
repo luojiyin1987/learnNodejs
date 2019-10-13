@@ -6,15 +6,14 @@ app.use('/wiki', wiki);
 
 app.use(express.static('public'));
 
-app.get('/', (req, res) =>
+app.get('/download', (req, res) =>
 {
-   res.send('Hello World');
-   setTimeout(() =>
-   {
-       console.log('first');
-   }, 3000);
+   res.json({result: 0});
+});
 
-   console.log("second");
+app.get('/', (req, res)=>
+{
+    res.sendfile('index.html');
 });
 
 

@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<script  type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous">
+</script>
 <body>
 <h1 class="heading">YouTube Downloader !</h1>
 <input class="URL-input" placeholder="Video URL">
-<button class="download-button">Download</button>
+<button class="download-button" onclick="download()" >Download</button>
 
 </body>
 </html>
+
+
+<script type="text/javascript">
+   function  download()
+   {
+       console.log('download');
+       console.log($( ".URL-input" ).val());
+   }
+
+</script>

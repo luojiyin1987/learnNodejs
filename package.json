@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/luojiyin1987/learnNodejs#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "vue": "^2.5.17",
     "vue-hot-reload-api": "^2.3.1"
   },

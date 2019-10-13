@@ -22,6 +22,22 @@
    {
        console.log('download');
        console.log($( ".URL-input" ).val());
+       const downloadURL = $( ".URL-input" ).val();
+
+   }
+
+   function postJson(url,data,cb)
+   {
+       $.ajax({
+           method:"post",url: url
+           ,contentType:"application/json; charset=UTF-8"
+           ,data:JSON.stringify(data)
+           ,success:cb
+           /*			,error: function(XMLHttpRequest, textStatus, errorThrown){
+                                   alert("网络错误"+XMLHttpRequest.status); //查看请求状态
+                                   //调用失败代码
+                       }*/
+       });
    }
 
 </script>

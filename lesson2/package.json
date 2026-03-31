@@ -9,7 +9,11 @@
   "author": "luojiyin",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^2.2.2",
+    "cheerio": "^1.2.0",
     "express": "^5.2.1",
-    "utility": "^2.5.0"
+    "superagent": "^10.3.0",
+    "utility": "^2.5.0",
+    "vue": "^3.5.31"
   }
 }

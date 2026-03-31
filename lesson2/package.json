@@ -9,7 +9,7 @@
   "author": "luojiyin",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3",
-    "utility": "^1.14.0"
+    "express": "^5.2.1",
+    "utility": "^2.5.0"
   }
 }

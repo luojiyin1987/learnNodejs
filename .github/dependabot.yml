@@ -1,0 +1,68 @@
+version: 2
+updates:
+  # Root project
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Lesson 2
+  - package-ecosystem: "npm"
+    directory: "/lesson2"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    labels:
+      - "dependencies"
+      - "npm"
+      - "lesson2"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Lesson 5
+  - package-ecosystem: "npm"
+    directory: "/lesson5"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    labels:
+      - "dependencies"
+      - "npm"
+      - "lesson5"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Lesson 6
+  - package-ecosystem: "npm"
+    directory: "/lesson6"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    labels:
+      - "dependencies"
+      - "npm"
+      - "lesson6"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
